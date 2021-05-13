@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackgroundLight">#cceeee</color>
+    <color name="colorBackgroundMedium">#779999</color>
+    <color name="colorBackgroundDark">#335555</color>
+    <color name="colorTextLight">#cceeee</color>
+    <color name="colorTextMedium">#779999</color>
+    <color name="colorTextDark">#335555</color>
+    <color name="colorButtonLight">#cceeee</color>
+    <color name="colorButtonMedium">#779999</color>
+    <color name="colorButtonDark">#335555</color>
+    <color name="colorPrimary">#cceeee</color>
+    <color name="colorPrimaryVariant">#779999</color>
+    <color name="colorOnPrimary">#335555</color>
+    <color name="colorSecondary">#cceeee</color>
+    <color name="colorSecondaryVariant">#779999</color>
+    <color name="colorOnSecondary">#335555</color>
+    <color name="colorPrimaryDark">#cceeee</color>
+    <color name="colorPrimaryVariantDark">#779999</color>
+    <color name="colorOnPrimaryDark">#335555</color>
+    <color name="colorSecondaryDark">#cceeee</color>
+    <color name="colorSecondaryVariantDark">#779999</color>
+    <color name="colorOnSecondaryDark">#335555</color>
+
+</resources>

@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundMedium"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/settingsHeaderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="50sp"
+        android:layout_weight="0"
+        android:text="@string/settings"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextLight"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundMedium"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/darkModeOff"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorButtonDark"
+            android:backgroundTint="@color/colorButtonLight"
+            android:onClick="darkModeClicked"
+            android:text="@string/dark_mode_off"
+            android:textColor="@color/colorTextDark"
+            android:textOff="@string/dark_mode_off"
+            android:textOn="@string/dark_mode_on" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_weight="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundMedium"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/gameModeSlow"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorButtonDark"
+            android:backgroundTint="@color/colorButtonLight"
+            android:onClick="gameModeClicked"
+            android:text="@string/game_speed_slow"
+            android:textColor="@color/colorTextDark"
+            android:textOff="@string/game_speed_slow"
+            android:textOn="@string/game_speed_fast" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

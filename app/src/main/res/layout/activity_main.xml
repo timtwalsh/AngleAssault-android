@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundLight"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextDark"
+        android:textSize="36sp" />
+
+    <ImageButton
+        android:id="@+id/main_screen_image"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:layout_weight=".3"
+        android:contentDescription="@string/app_name"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
+        android:text="@string/start"
+        android:textColor="@color/colorTextLight"
+        android:background="@color/colorButtonMedium"
+        android:textAlignment="center" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/scores_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
+        android:text="@string/high_scores"
+        android:textColor="@color/colorTextLight"
+        android:background="@color/colorButtonMedium"
+        android:textAlignment="center"
+        android:onClick="highScoreButton"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settings_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
+        android:text="@string/settings"
+        android:textColor="@color/colorTextLight"
+        android:background="@color/colorButtonMedium"
+        android:textAlignment="center"
+        android:onClick="settingsButton"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1" />
+
+</LinearLayout>

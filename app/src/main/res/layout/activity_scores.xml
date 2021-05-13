@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundMedium"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/score_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/high_scores"
+        android:textColor="@color/colorTextLight"
+        android:textSize="36sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:id="@+id/name_col_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/name_col_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundLight"
+                android:text="@string/name"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextDark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/name0"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:text="abcdefghijklm"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextLight"
+                android:textSize="36sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/score_col_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/score_col_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundLight"
+                android:text="@string/score"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextDark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/score0"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:text="###"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextLight"
+                android:textSize="36sp" />
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
