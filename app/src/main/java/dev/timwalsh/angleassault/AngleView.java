@@ -7,26 +7,31 @@ import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.PointF;
 import androidx.annotation.Nullable;
+
+import android.graphics.RectF;
+import android.graphics.drawable.shapes.OvalShape;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 public class AngleView extends View {
     private static final int PENDULUM_SIZE = 25;
     private static final int HIGHLIGHT_STROKE_SIZE = 6;
     private double backgroundCircleRadius = 2.5;
-    private final PointF pendulumCenter;
+    private final PointF pendulumEnd;
+//    private final PointF angleArc;
     private final Point center;
+    private RectF oval = new RectF();
     private int width, height;
     private final Paint paintCircleBackground;
     private final Paint paintHighlight;
     private Paint paintAngleLine;
     private Paint paintPendulum;
+    private float angle = 0;
     Resources res = getResources();
 
     public AngleView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        pendulumCenter = new PointF();
+        pendulumEnd = new PointF();
         center = new Point();
         paintCircleBackground = new Paint();
         paintHighlight = new Paint();
@@ -41,10 +46,11 @@ public class AngleView extends View {
         setBackgroundColor(context.getColor(R.color.colorBackgroundDark));
     }
 
-    public void setAngle(float x, float y) {
-        pendulumCenter.x = (float) (center.x + x * width/backgroundCircleRadius);
-        pendulumCenter.y = (float) (center.y + y * width/backgroundCircleRadius);
-        Log.i("AngleView", pendulumCenter.toString());
+    public void setAngle(float newAngle) {
+        angle = newAngle;
+        pendulumEnd.x = center.x - (float) Math.cos((angle+90%360)/360*(2*3.14159f)) * width/2;
+        pendulumEnd.y = center.y - (float) Math.sin((angle+90%360)/360*(2*3.14159f)) * width/2;
+        oval.set(center.x-width/6.0f,center.y-width/6.0f,center.x+width/6.0f, center.y+width/6.0f);
         invalidate();
     }
 
@@ -55,7 +61,6 @@ public class AngleView extends View {
         center.y = h / 2;
         width = w;
         height = h;
-        setAngle(0, 0);
     }
 
     @Override
@@ -65,7 +70,8 @@ public class AngleView extends View {
         canvas.drawOval(0,circleOffset,width, (float) (center.y + width/2.0), paintCircleBackground);
         canvas.drawLine( (float)(width/2.0) + (float)(HIGHLIGHT_STROKE_SIZE/2.0), circleOffset, center.x, (float)(center.y+width/2.0), paintHighlight);
         canvas.drawLine(0, center.y, width, center.y, paintHighlight);
-        canvas.drawLine(center.x, center.y, pendulumCenter.x, pendulumCenter.y, paintAngleLine);
-        canvas.drawCircle(pendulumCenter.x, pendulumCenter.y, PENDULUM_SIZE, paintPendulum);
+        canvas.drawLine(center.x, center.y, pendulumEnd.x, pendulumEnd.y, paintAngleLine);
+        canvas.drawCircle(pendulumEnd.x, pendulumEnd.y, PENDULUM_SIZE, paintPendulum);
+        canvas.drawArc(oval, -90F, angle, true, paintHighlight);
     }
 }

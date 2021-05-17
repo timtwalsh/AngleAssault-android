@@ -15,12 +15,14 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_angle_view">AngleView</string>
-    <!--
-    This string is used for square devices and overridden by hello_world in
-    values-round/strings.xml for round devices.
-    -->
     <string name="hello_world">Hello Square World!</string>
-    <string name="game_title">Game Title</string>
+    <string name="game_timer">Timer###</string>
     <string name="example_question">Example Question</string>
     <string name="example_angle">###º</string>
+    <string name="score_text">"Score: "</string>
+    <string name="question_acute">Make an Acute angle</string>
+    <string name="question_right">Give me a Right angle</string>
+    <string name="question_obtuse">Show us an Obtuse angle</string>
+    <string name="question_straight">Straight angle, Go!</string>
+    <string name="question_reflex">Let me see a Reflex angle</string>
 </resources>
