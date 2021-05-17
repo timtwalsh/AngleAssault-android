@@ -14,14 +14,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void gameButton(View view) {
+        // Open Game with the appropriate intent.
+        Intent intent = new Intent(this, GameActivity.class);
+        startActivityForResult(intent, GameActivity.GAME_REQUEST);
+    }
     public void settingsButton(View view) {
         // Open Settings with the appropriate intent.
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivityForResult(intent, SettingsActivity.SETTINGS_REQUEST);
     }
     public void highScoreButton(View view) {
-        // Open Settings with the appropriate intent.
-        Intent intent = new Intent(this, SettingsActivity.class);
+        // Open Scores with the appropriate intent.
+        Intent intent = new Intent(this, HighScoreActivity.class);
         startActivityForResult(intent, HighScoreActivity.HIGHSCORE_REQUEST);
     }
 }

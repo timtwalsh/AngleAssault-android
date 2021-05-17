@@ -11,4 +11,16 @@
     <string name="dark_mode">Dark Mode</string>
     <string name="dark_mode_on">Dark Mode On</string>
     <string name="dark_mode_off">Dark Mode Off</string>
+    <string name="title_activity_game">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_angle_view">AngleView</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="game_title">Game Title</string>
+    <string name="example_question">Example Question</string>
+    <string name="example_angle">###º</string>
 </resources>

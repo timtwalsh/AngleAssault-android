@@ -10,16 +10,21 @@
     <color name="colorButtonMedium">#779999</color>
     <color name="colorButtonDark">#335555</color>
     <color name="colorPrimary">#cceeee</color>
-    <color name="colorPrimaryVariant">#779999</color>
+    <color name="colorPrimaryVariant">#aaffff</color>
     <color name="colorOnPrimary">#335555</color>
     <color name="colorSecondary">#cceeee</color>
-    <color name="colorSecondaryVariant">#779999</color>
+    <color name="colorSecondaryVariant">#559999</color>
     <color name="colorOnSecondary">#335555</color>
     <color name="colorPrimaryDark">#cceeee</color>
-    <color name="colorPrimaryVariantDark">#779999</color>
+    <color name="colorPrimaryVariantDark">#559999</color>
     <color name="colorOnPrimaryDark">#335555</color>
     <color name="colorSecondaryDark">#cceeee</color>
-    <color name="colorSecondaryVariantDark">#779999</color>
+    <color name="colorSecondaryVariantDark">#559999</color>
     <color name="colorOnSecondaryDark">#335555</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
 
 </resources>
