@@ -1,74 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark"
+    android:orientation="vertical"
     tools:context=".GameActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="1">
+    <Button
+        android:id="@+id/exitGameBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/colorButtonBright"
+        android:onClick="exitGameButton"
+        android:text="@string/main_menu"
+        android:textColor="@color/colorTextLight" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/timerText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/game_timer"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <TextView
-                android:id="@+id/scoreText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/score_text"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-        </LinearLayout>
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:forceHasOverlappingRendering="true"
+        android:foregroundGravity="center">
 
         <TextView
-            android:id="@+id/questionText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/example_question"
-            android:textAlignment="center"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/currentAngle"
+            android:id="@+id/currentAngleText"
             android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_height="75dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:rotation="0"
             android:text="@string/example_angle"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textColor="@color/colorTextLight"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </FrameLayout>
 
-        <FrameLayout
-            android:id="@+id/mainViewFrame"
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/colorBackgroundMedium"
+        android:text="@string/example_question"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextLight"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/colorBackgroundMedium"
+        android:gravity="bottom|end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/timerText"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:minHeight="425dp">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/game_timer"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextLight"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
-            <dev.timwalsh.angleassault.AngleView
-                android:id="@+id/angleView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:minHeight="425dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </FrameLayout>
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/score_text"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextLight"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <dev.timwalsh.angleassault.AngleView
+        android:id="@+id/angleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minHeight="425dp" />
+
+</LinearLayout>

@@ -1,17 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AngleAssault" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.AngleAssault" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
-        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorPrimary">@color/colorBackgroundBright</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorCircleBackground</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
-        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="colorOnSecondary">@color/colorArcAngle</item>
         <!-- Status bar color. -->
-
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorSecondaryVariant</item>
+    </style>
+    <style name="ToggleButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="colorButtonNormal">@color/colorButtonBright</item>
+        <item name="colorAccent">@color/colorButtonDark</item>
     </style>
 </resources>

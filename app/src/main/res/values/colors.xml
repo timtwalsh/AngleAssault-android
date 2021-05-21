@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorBackgroundLight">#cceeee</color>
-    <color name="colorBackgroundMedium">#779999</color>
-    <color name="colorBackgroundDark">#335555</color>
-    <color name="colorTextLight">#cceeee</color>
-    <color name="colorTextMedium">#779999</color>
-    <color name="colorTextDark">#335555</color>
-    <color name="colorButtonLight">#cceeee</color>
-    <color name="colorButtonMedium">#779999</color>
-    <color name="colorButtonDark">#335555</color>
-    <color name="colorPrimary">#cceeee</color>
-    <color name="colorPrimaryVariant">#aaffff</color>
-    <color name="colorOnPrimary">#335555</color>
-    <color name="colorSecondary">#cceeee</color>
-    <color name="colorSecondaryVariant">#559999</color>
-    <color name="colorOnSecondary">#335555</color>
-    <color name="colorPrimaryDark">#cceeee</color>
-    <color name="colorPrimaryVariantDark">#559999</color>
-    <color name="colorOnPrimaryDark">#335555</color>
-    <color name="colorSecondaryDark">#cceeee</color>
-    <color name="colorSecondaryVariantDark">#559999</color>
-    <color name="colorOnSecondaryDark">#335555</color>
+    <color name="colorBackgroundLight">#7209B7</color>
+    <color name="colorBackgroundAlternate">#A2158D</color>
+    <color name="colorBackgroundBright">#F72585</color>
+    <color name="colorBackgroundMedium">#480CA8</color>
+    <color name="colorBackgroundDark">#280972</color>
+    <color name="colorTextLight">#EEEEEE</color>
+    <color name="colorTextMedium">#999999</color>
+    <color name="colorTextDark">#222222</color>
+    <color name="colorButtonBright">#F72585</color>
+    <color name="colorButtonLight">#A2158D</color>
+    <color name="colorButtonMedium">#7209B7</color>
+    <color name="colorButtonDark">#480CA8</color>
+    <color name="colorAngleLine">#F72585</color>
+    <color name="colorPendulum">#F72585</color>
+    <color name="colorDivideLines">#3A0CA3</color>
+    <color name="colorArcAngle">#A2158D</color>
+    <color name="colorCircleBackground">#7209B7</color>
+    <color name="colorSecondary">#4895EF</color>
+    <color name="colorSecondaryVariant">#7209B7</color>
+    <color name="colorPrimaryDark">#3A0CA3</color>
+    <color name="colorPrimaryVariantDark">#7209B7</color>
+    <color name="colorSecondaryDark">#3A0CA3</color>
+    <color name="colorSecondaryVariantDark">#7209B7</color>
+    <color name="colorOnSecondaryDark">#3A0CA3</color>
+    <color name="black_overlay">#66000000</color>
     <color name="light_blue_600">#FF039BE5</color>
     <color name="light_blue_900">#FF01579B</color>
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
-    <color name="black_overlay">#66000000</color>
 
 </resources>

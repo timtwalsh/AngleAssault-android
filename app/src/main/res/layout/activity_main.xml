@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackgroundLight"
+    android:background="@color/colorBackgroundBright"
     android:gravity="center_horizontal|center_vertical"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -17,29 +17,36 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/colorTextDark"
-        android:textSize="36sp" />
+        android:translationZ="1dp"
 
-    <ImageButton
+        android:textSize="60sp" />
+
+    <ImageView
         android:id="@+id/main_screen_image"
         android:layout_width="match_parent"
         android:layout_height="283dp"
         android:layout_weight=".3"
         android:contentDescription="@string/app_name"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:background="@color/colorBackgroundBright"
+        tools:src="@drawable/ic_launcher_foreground"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:translationZ="0dp"
+        tools:srcCompat="@drawable/ic_launcher_foreground" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight=".1" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/start_btn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_weight=".2"
         android:text="@string/start"
         android:textColor="@color/colorTextLight"
-        android:background="@color/colorButtonMedium"
+        android:backgroundTint="@color/colorButtonDark"
         android:textAlignment="center"
         android:onClick="gameButton"/>
 
@@ -48,14 +55,14 @@
         android:layout_height="wrap_content"
         android:layout_weight=".1" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/scores_btn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_weight=".2"
         android:text="@string/high_scores"
         android:textColor="@color/colorTextLight"
-        android:background="@color/colorButtonMedium"
+        android:backgroundTint="@color/colorButtonDark"
         android:textAlignment="center"
         android:onClick="highScoreButton"/>
 
@@ -64,14 +71,14 @@
         android:layout_height="wrap_content"
         android:layout_weight=".1" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/settings_btn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_weight=".2"
         android:text="@string/settings"
         android:textColor="@color/colorTextLight"
-        android:background="@color/colorButtonMedium"
+        android:backgroundTint="@color/colorButtonDark"
         android:textAlignment="center"
         android:onClick="settingsButton"/>
 
