@@ -83,11 +83,6 @@ public class SmokeTests {
 
     ViewInteraction settingsSaveBtn = onView(
             allOf(withId(R.id.saveButton), withText("Save"),
-                    childAtPosition(
-                            childAtPosition(
-                                    withClassName(is("android.widget.LinearLayout")),
-                                    3),
-                            4),
                     isDisplayed()));
 
     ViewInteraction mainMenuHighScoreBtn = onView(
