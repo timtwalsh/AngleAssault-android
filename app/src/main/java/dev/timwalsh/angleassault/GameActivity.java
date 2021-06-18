@@ -159,10 +159,16 @@ public class GameActivity extends Activity implements SensorEventListener {
         gameOverWindow.setOnDismissListener(() -> {
             completeRound(playerNameInput);
             gameOverWindow.dismiss();
+            startGame();
         });
         // Close the popup window and start a new game.
         Button newGameButton = gameOverView.findViewById(R.id.newGameButton);
         newGameButton.setOnClickListener(v -> gameOverWindow.dismiss());
+        Button fragExitGameBtn = gameOverView.findViewById(R.id.fragExitGameBtn);
+        fragExitGameBtn.setOnClickListener(v -> {
+            completeRound(playerNameInput);
+            finish();
+        });
     }
 
     private void completeRound(EditText playerNameInput) {
@@ -171,7 +177,6 @@ public class GameActivity extends Activity implements SensorEventListener {
         if (!playerName.equals(getString(R.string.enter_name)) && playerName != null) {
             database.addScore(new HighScoreItem(playerName, angleGame.getScore()));
         }
-        startGame();
     }
 
 

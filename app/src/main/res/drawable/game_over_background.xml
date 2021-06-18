@@ -4,7 +4,7 @@
         <shape
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <solid android:color="@color/colorBackgroundAlternate" />
+            <solid android:color="@color/colorFragmentBorder" />
             <corners
                 android:bottomLeftRadius="20dp"
                 android:bottomRightRadius="20dp"
@@ -19,7 +19,7 @@
     </item>
     <item>
         <shape xmlns:android="http://schemas.android.com/apk/res/android">
-            <solid android:color="@color/colorBackgroundLight" />
+            <solid android:color="@color/colorFragmentBackground" />
             <corners
                 android:bottomLeftRadius="10dp"
                 android:bottomRightRadius="10dp"

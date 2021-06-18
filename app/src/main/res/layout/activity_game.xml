@@ -4,7 +4,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackgroundDark"
+    android:background="@color/colorBackgroundMedium"
     android:orientation="vertical"
     tools:context=".GameActivity">
 
@@ -14,9 +14,10 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:background="@color/colorButtonBright"
+        android:buttonTint="@color/colorButtonBright"
         android:onClick="exitGameButton"
         android:text="@string/main_menu"
-        android:textColor="@color/colorTextLight" />
+        android:textColor="@color/colorTextDark" />
 
     <FrameLayout
         android:layout_width="100dp"
@@ -34,7 +35,7 @@
             android:rotation="0"
             android:text="@string/example_angle"
             android:textAlignment="center"
-            android:textColor="@color/colorTextLight"
+            android:textColor="@color/colorTextDark"
             android:textSize="30sp"
             android:textStyle="bold" />
     </FrameLayout>
@@ -44,16 +45,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:background="@color/colorBackgroundMedium"
+        android:background="@color/colorBackgroundLight"
         android:text="@string/example_question"
         android:textAlignment="center"
-        android:textColor="@color/colorTextLight"
+        android:textColor="@color/colorTextDark"
         android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:background="@color/colorBackgroundMedium"
+        android:background="@color/colorBackgroundLight"
         android:gravity="bottom|end"
         android:orientation="horizontal">
 
@@ -64,8 +65,8 @@
             android:layout_weight="1"
             android:text="@string/game_timer"
             android:textAlignment="center"
-            android:textColor="@color/colorTextLight"
-            android:textSize="40sp"
+            android:textColor="@color/colorTextDark"
+            android:textSize="36sp"
             android:textStyle="bold" />
 
         <TextView
@@ -75,7 +76,7 @@
             android:layout_weight="1"
             android:text="@string/score_text"
             android:textAlignment="center"
-            android:textColor="@color/colorTextLight"
+            android:textColor="@color/colorTextDark"
             android:textSize="36sp"
             android:textStyle="bold" />
 

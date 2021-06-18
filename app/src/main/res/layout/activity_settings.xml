@@ -13,7 +13,7 @@
         android:layout_weight="0"
         android:text="@string/settings"
         android:textAlignment="center"
-        android:textColor="@color/colorTextLight"
+        android:textColor="@color/colorTextDark"
         android:textSize="36sp"
         android:textStyle="bold" />
 
@@ -32,7 +32,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorBackgroundMedium"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -44,10 +43,9 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorButtonBright"
             android:buttonTint="@color/colorButtonBright"
-            android:foregroundTint="@color/colorButtonBright"
             android:onClick="gameModeClicked"
             android:text="@string/game_speed_slow"
-            android:textColor="@color/colorTextLight"
+            android:textColor="@color/colorTextDark"
             android:textOff="@string/game_speed_slow"
             android:textOn="@string/game_speed_fast" />
 
@@ -59,10 +57,11 @@
             android:layout_width="200dp"
             android:layout_height="75dp"
             android:layout_gravity="center_horizontal"
-            android:background="@color/colorButtonBright"
+            android:background="@color/colorButtonDark"
+            android:buttonTint="@color/colorButtonDark"
             android:onClick="resetDataButton"
             android:text="@string/reset_data"
-            android:textColor="@color/colorTextLight"/>
+            android:textColor="@color/colorTextDark"/>
 
         <Button
             android:id="@+id/saveButton"
@@ -70,10 +69,11 @@
             android:layout_width="200dp"
             android:layout_height="75dp"
             android:layout_gravity="center_horizontal"
-            android:background="@color/colorButtonBright"
+            android:background="@color/colorButtonMedium"
+            android:buttonTint="@color/colorButtonMedium"
             android:onClick="saveClicked"
             android:text="@string/save"
-            android:textColor="@color/colorTextLight"
+            android:textColor="@color/colorTextDark"
             android:textSize="24sp"
             android:visibility="visible" />
     </LinearLayout>

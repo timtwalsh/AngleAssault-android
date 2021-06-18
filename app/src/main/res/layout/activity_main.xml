@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackgroundBright"
+    android:background="@color/colorBackgroundMedium"
     android:gravity="center_horizontal|center_vertical"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -45,8 +45,9 @@
         android:layout_height="wrap_content"
         android:layout_weight=".2"
         android:text="@string/start"
-        android:textColor="@color/colorTextLight"
-        android:backgroundTint="@color/colorButtonDark"
+        android:textColor="@color/colorTextDark"
+        android:background="@color/colorButtonMedium"
+        android:buttonTint="@color/colorButtonMedium"
         android:textAlignment="center"
         android:onClick="gameButton"/>
 
@@ -61,8 +62,9 @@
         android:layout_height="wrap_content"
         android:layout_weight=".2"
         android:text="@string/high_scores"
-        android:textColor="@color/colorTextLight"
-        android:backgroundTint="@color/colorButtonDark"
+        android:textColor="@color/colorTextDark"
+        android:background="@color/colorButtonBright"
+        android:buttonTint="@color/colorButtonBright"
         android:textAlignment="center"
         android:onClick="highScoreButton"/>
 
@@ -77,8 +79,9 @@
         android:layout_height="wrap_content"
         android:layout_weight=".2"
         android:text="@string/settings"
-        android:textColor="@color/colorTextLight"
-        android:backgroundTint="@color/colorButtonDark"
+        android:textColor="@color/colorTextDark"
+        android:background="@color/colorButtonDark"
+        android:buttonTint="@color/colorButtonDark"
         android:textAlignment="center"
         android:onClick="settingsButton"/>
 

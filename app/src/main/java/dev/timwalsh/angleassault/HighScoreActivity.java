@@ -36,7 +36,7 @@ public class HighScoreActivity extends Activity {
             public View getView(int position, View convertView, ViewGroup parent) {
                 View view = super.getView(position, convertView, parent);
                 TextView viewText = view.findViewById(android.R.id.text1);
-                viewText.setTextColor(this.getContext().getColor(R.color.colorTextLight));
+                viewText.setTextColor(this.getContext().getColor(R.color.colorTextDark));
                 return view;
             }
         };
@@ -46,7 +46,7 @@ public class HighScoreActivity extends Activity {
             public View getView(int position, View convertView, ViewGroup parent) {
                 View view = super.getView(position, convertView, parent);
                 TextView viewText = view.findViewById(android.R.id.text1);
-                viewText.setTextColor(this.getContext().getColor(R.color.colorTextLight));
+                viewText.setTextColor(this.getContext().getColor(R.color.colorTextDark));
                 viewText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
                 return view;
             }

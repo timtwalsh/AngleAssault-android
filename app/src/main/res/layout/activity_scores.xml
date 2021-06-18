@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackgroundDark"
+    android:background="@color/colorBackgroundMedium"
     android:gravity="top|center"
     android:orientation="vertical">
 
@@ -10,17 +10,17 @@
         android:id="@+id/exitScores"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:background="@color/colorButtonBright"
+        android:backgroundTint="@color/colorButtonBright"
         android:onClick="exitGameButton"
         android:text="@string/main_menu"
-        android:textColor="@color/colorTextLight" />
+        android:textColor="@color/colorTextDark" />
 
     <TextView
         android:id="@+id/score_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/high_scores"
-        android:textColor="@color/colorTextLight"
+        android:textColor="@color/colorTextDark"
         android:textSize="36sp" />
 
     <LinearLayout
@@ -39,10 +39,10 @@
                 android:id="@+id/name_col_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorBackgroundLight"
+                android:background="@color/colorBackgroundBright"
                 android:text="@string/name"
                 android:textAlignment="center"
-                android:textColor="@color/colorTextLight"
+                android:textColor="@color/colorTextDark"
                 android:textSize="24sp" />
 
             <ListView
@@ -65,10 +65,10 @@
                 android:id="@+id/score_col_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorBackgroundLight"
+                android:background="@color/colorBackgroundBright"
                 android:text="@string/score"
                 android:textAlignment="center"
-                android:textColor="@color/colorTextLight"
+                android:textColor="@color/colorTextDark"
                 android:textSize="24sp" />
 
             <ListView

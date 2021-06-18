@@ -64,18 +64,30 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:textColor="@color/colorTextDark"
             android:background="@color/colorButtonBright"
+            android:buttonTint="@color/colorButtonBright"
             android:onClick="shareButton"
-            android:text="@string/share"
-            android:textColor="@color/colorTextLight" />
+            android:text="@string/share" />
 
         <Button
             android:id="@+id/newGameButton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorButtonBright"
-            android:text="@string/newGame"
-            android:textColor="@color/colorTextLight" />
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorTextDark"
+            android:background="@color/colorButtonMedium"
+            android:buttonTint="@color/colorButtonMedium"
+            android:text="@string/newGame" />
+
+        <Button
+            android:id="@+id/fragExitGameBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextDark"
+            android:background="@color/colorButtonDark"
+            android:buttonTint="@color/colorButtonDark"
+            android:text="@string/exitGame" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

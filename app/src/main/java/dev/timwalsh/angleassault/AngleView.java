@@ -30,7 +30,7 @@ public class AngleView extends View {
         pendulumEnd = new PointF();
         center = new Point();
         setupPaints(context);
-        setBackgroundColor(context.getColor(R.color.colorBackgroundDark));
+        setBackgroundColor(context.getColor(R.color.colorBackgroundMedium));
     }
 
     public void setupPaints(Context context) {
